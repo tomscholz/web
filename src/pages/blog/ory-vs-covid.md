@@ -57,8 +57,7 @@ It is amazing to see a tool that was written to ease the development process at 
 
 Here you can see the full code of the implementation: 
 ```go
-
- NewTestDatabaseWithConfig creates a new database suitable for use in testing.
+// NewTestDatabaseWithConfig creates a new database suitable for use in testing.
  // This should not be used outside of testing, but it is exposed in the main
  // package so it can be shared with other packages.
  //
