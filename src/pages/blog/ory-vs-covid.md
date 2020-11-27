@@ -1,27 +1,24 @@
 ---
-published: true
 path: '/ory-vs-covid/'
-title: >
+
+title: |
   How Ory is helping keep Covid in check
 
-metaDescription: >
-  Dockertest makes database testing so easy, even Google is jealous. 
-
-metaTitle: >
-  Open source software critical for global virus response
-
-publishedAt: '2020-11-27'
-author: 'Vincent Kraus'
-overline: >
-  Dockertest - easy go tests with docker
-
-category: Article
-subtitle: >
- How Open-source software and Ory can be part of a greater effort against the virus
-
-teaser:
+teaser: |
   This article gives a short introduction to Dockertest and how Google is using it against Covid19,
   also an overview about the open-source virus response in general. 
+
+seo:
+  title: |
+    Open source software critical for global virus response
+  keywords: |
+    docker, test, database testing, cloud development, auth, authentication, open source, Covid19, pandemic
+
+publishedAt: '2020-12-02'
+author: vinckr
+
+overline: |
+  Dockertest - Automated Database Testing in Docker   
 ---
 
 
@@ -219,3 +216,4 @@ Should you have further questions or feedback, visit the [ORY community forum](h
 It is free and helps grow the project and community.  
 
 Sign up to [the ORY newsletter](https://ory.us10.list-manage.com/subscribe?u=ffb1a878e4ec6c0ed312a3480&id=f605a41b53) and we will notify you of new updates to [ORY Dockertest](https://github.com/ory/Dockertest) and [other ORY projects](https://github.com/ory/).
+
