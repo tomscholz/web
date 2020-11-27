@@ -170,7 +170,6 @@ Here you can see the full code of the implementation:
 		Password: password,
 	}
 }
-
 ```
 
 Health agencies around the world use this reference implementation of the Exposure Notifications API to build a backend to their notification apps. 
