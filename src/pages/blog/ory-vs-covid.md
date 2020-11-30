@@ -55,9 +55,8 @@ Google's [open source reference implementation](https://github.com/google/exposu
 It is amazing to see a tool that was written to ease the development process at Ory is used by big tech organisations in the most impactful health operation in modern times. It shows what a reliable and essential tool [Dockertest](https://github.com/ory/Dockertest) has become over the years.
 
 Here you can see the full code of the implementation: 
-```
-
- NewTestDatabaseWithConfig creates a new database suitable for use in testing.
+```go
+// NewTestDatabaseWithConfig creates a new database suitable for use in testing.
  // This should not be used outside of testing, but it is exposed in the main
  // package so it can be shared with other packages.
  //
@@ -170,7 +169,6 @@ Here you can see the full code of the implementation:
 		Password: password,
 	}
 }
-
 ```
 
 Health agencies around the world use this reference implementation of the Exposure Notifications API to build a backend to their notification apps. 
@@ -215,4 +213,3 @@ Should you have further questions or feedback, visit the [ORY community forum](h
 It is free and helps grow the project and community.  
 
 Sign up to [the ORY newsletter](https://ory.us10.list-manage.com/subscribe?u=ffb1a878e4ec6c0ed312a3480&id=f605a41b53) and we will notify you of new updates to [ORY Dockertest](https://github.com/ory/Dockertest) and [other ORY projects](https://github.com/ory/).
-
