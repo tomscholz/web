@@ -21,12 +21,11 @@ overline: |
   Dockertest - Automated Database Testing in Docker   
 ---
 
-
-### What is Ory Dockertest?
-
 Test driven software development is built into the fundamentals in the GO programming language.  
 The Ory Open Source Software project Dockertest began with the aim to simplify database testing and reduce the complexity in building unit tests.  
 In this blogpost, I want to introduce Dockertest, and highlight how its simplicity and utility in building cloud native database applications has made it a widespread tool among developers.   
+
+## What is Ory Dockertest?
 
 In today's cloud native software development, many engineers choose to use containerization software such [Docker](https://docs.docker.com/) to test, deploy, and ship database applications.   
 And even though the whole development process has become much easier with Docker, there are still cases that are hard to handle.  
@@ -44,7 +43,7 @@ This process becomes
 In [Dockertest](https://github.com/ory/Dockertest) a pool represents a connection to the Docker API and is used to handle docker images and resources represent the docker containers.
 You can find examples for all common databases on [github.com/ory/Dockertest](https://github.com/ory/Dockertest). 
 
-### How Dockertest is helping keeping Covid in check
+## How Dockertest is helping keeping Covid in check
 
 The (Google/Apple) Exposure Notification (GAEN) system was developed by both companies to help provide an effective framework for tracing Covid19 infections with an emphasis on privacy.
 Goverments worldwide use it to provide their citizens with a means of tracing infections or rather notifiying them of exposure to the virus. 
@@ -180,7 +179,7 @@ It then stores the keys in a database and if there is a corresponding match on a
 
 You can read more in depth about the server on [Googles github documentation](https://google.github.io/exposure-notifications-server/)
 
-### Open-source software drives innovative development
+## Open-source software drives innovative development
 
 The whole GAEN project is open-source, as is [Dockertest](https://github.com/ory/Dockertest). The whole concept of contact tracing or exposure notification works great with open source, since it cuts down complexity of the whole operation. 
 Imagine how much slower and inconsistent it would be if every country tried to build this software themselves. 
