@@ -27,6 +27,7 @@ class MobileMenu extends Component<PropTypes, StateTypes> {
     return (
       <div className="hidden-lg">
         <button
+          aria-label="Toggle menu"
           onClick={this.toggle}
           className={cn(styles.navIcon, { [styles.isActive]: this.state.open })}
           type="button"

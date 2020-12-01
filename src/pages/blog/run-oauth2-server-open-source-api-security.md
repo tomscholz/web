@@ -60,10 +60,9 @@ repositories you want to grant access to and if it is ok to grant other data
 
 <p>
 <figure>
-  <video autoplay muted loop>
+  <video autoplay muted loop playsInline>
      <source src="../../images/articles/oauth2/oauth2-flow.mp4" type="video/mp4"/>
      <source src="../../images/articles/oauth2/oauth2-flow.webm" type="video/webm"/>
-     <img src="../../images/articles/oauth2/oauth2-flow.gif" alt="GitHub OAuth2 visual flow" />
   </video>
   <figcaption>
     A typical OAuth2 Flow with GitHub acting as the OAuth2 Server

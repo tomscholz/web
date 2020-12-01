@@ -35,11 +35,11 @@ const Header = ({ menu = [], icons = [], appendix }: PropTypes) => (
         <div className="col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-sm-10 col-md-10 col-lg-10">
           <div className="row middle-sm">
             <div className={styles.logo} onClick={() => navigate('/')}>
-              <img src={logo} className="hidden-sm hidden-md" />
+              <img loading="lazy" src={logo} className="hidden-sm hidden-md" />
               <span className={cn(styles.projectName, 'hidden-sm hidden-md')}>
                 {appendix ? `/ ${appendix}` : null}
               </span>
-              <img src={logoTiny} className="hidden-lg" />
+              <img loading="lazy" src={logoTiny} className="hidden-lg" />
               <span
                 className={cn(
                   styles.projectName,
@@ -69,7 +69,7 @@ const Header = ({ menu = [], icons = [], appendix }: PropTypes) => (
                     <li key={k}>
                       <a href={href}>
                         {title}
-                        {/*<img src={image} alt={title} />*/}
+                        {/*<img loading="lazy" src={image} alt={title} />*/}
                       </a>
                     </li>
                   ))}

@@ -104,7 +104,7 @@ authenticated.
 
 <p>
 <figure>
-    <img src="../../images/articles/auth-guide/image9.png" alt="User exchanges credentials for a long/short-living session cookie which contains information on the user (e.g. the user’s ID)."/>
+    <img loading="lazy" src="../../images/articles/auth-guide/image9.png" alt="User exchanges credentials for a long/short-living session cookie which contains information on the user (e.g. the user’s ID)."/>
     <figcaption>
         User exchanges credentials for a long/short-living session
         cookie which contains information on the user (e.g. the
@@ -269,7 +269,7 @@ temporary credentials. This is usually called Single Sign-On (SSO).
 
 <p>
 <figure>
-    <img src="../../images/articles/auth-guide/image8.png" alt="Simplified Single Sign-On" />
+    <img loading="lazy" src="../../images/articles/auth-guide/image8.png" alt="Simplified Single Sign-On" />
     <figcaption>Simplified Single Sign-On</figcaption>
 </figure>
 </p>
@@ -291,7 +291,7 @@ issue tokens which are sent on every request by the client:
 
 <p>
 <figure>
-    <img src="../../images/articles/auth-guide/image3.png" alt="A variety of clients accessing the service ecosystem"/>
+    <img loading="lazy" src="../../images/articles/auth-guide/image3.png" alt="A variety of clients accessing the service ecosystem"/>
     <figcaption>
         A variety of clients accessing the service ecosystem.
     </figcaption>

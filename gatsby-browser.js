@@ -29,6 +29,9 @@ export const onRouteUpdate = ({ location }, pluginOptions = {}) => {
     window.gtag('config', 'UA-71865250-1', {
       'page_path': pagePath
     });
+    window.gtag('config', 'G-J01VQCC9Y9', {
+      'page_path': pagePath
+    });
   }
 
   // Minimum delay for reactHelmet's requestAnimationFrame

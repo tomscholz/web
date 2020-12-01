@@ -20,7 +20,15 @@ const NotFoundPage = () => (
         </>
       }
       right={
-        <video width="100%" autoPlay controls={false} loop preload="true">
+        <video
+          width="100%"
+          autoPlay
+          controls={false}
+          loop
+          muted
+          playsInline
+          preload="true"
+        >
           <source src={require('../images/404.mp4')} type="video/mp4" />
         </video>
       }

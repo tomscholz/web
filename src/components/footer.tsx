@@ -72,7 +72,7 @@ const Footer = () => (
         <div className="col-lg-offset-1 col-lg-2 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 center-mobile">
           {brandPrefix.length > 0 ? (
             <>
-              <img src={logo} alt={'ORY logo'} />
+              <img loading="lazy" src={logo} alt={'ORY logo'} />
               <p className={cn(styles.contact)}>
                 Get in touch with us
                 <br />
@@ -81,7 +81,7 @@ const Footer = () => (
             </>
           ) : (
             <>
-              <img src={logoTiny} alt={'ORY logo'} />
+              <img loading="lazy" src={logoTiny} alt={'ORY logo'} />
             </>
           )}
         </div>

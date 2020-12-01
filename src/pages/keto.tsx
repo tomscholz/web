@@ -13,6 +13,7 @@ import Adopters from '../components/adopters'
 
 const KetoAnimation = () => (
   <img
+    loading="lazy"
     alt="The ORY Keto Permission and Role Management"
     className="responsive"
     src={ketoProcess}
@@ -20,7 +21,12 @@ const KetoAnimation = () => (
 )
 
 const KetoSdk = () => (
-  <img alt="ORY Keto SDKs" className="responsive" src={ketoPolyglot} />
+  <img
+    loading="lazy"
+    alt="ORY Keto SDKs"
+    className="responsive"
+    src={ketoPolyglot}
+  />
 )
 
 const KetoPage = () => (

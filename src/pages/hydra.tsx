@@ -14,6 +14,7 @@ import Adopters from '../components/adopters'
 
 const HydraAnimation = () => (
   <img
+    loading="lazy"
     alt="The ORY Hydra login and consent flow"
     className="responsive"
     src={hydraProcess}
@@ -21,7 +22,12 @@ const HydraAnimation = () => (
 )
 
 const HydraSdk = () => (
-  <img alt="ORY Hydra SDKs" className="responsive" src={hydraPolyglot} />
+  <img
+    loading="lazy"
+    alt="ORY Hydra SDKs"
+    className="responsive"
+    src={hydraPolyglot}
+  />
 )
 
 const IntegrationCodeBox = () => (

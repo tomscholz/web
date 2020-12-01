@@ -14,6 +14,7 @@ import Adopters from '../components/adopters'
 
 const OathkeeperAnimation = () => (
   <img
+    loading="lazy"
     alt="The ORY Oathkeeper identity and access proxy"
     className="responsive"
     src={oathkeeperProcess}
@@ -22,6 +23,7 @@ const OathkeeperAnimation = () => (
 
 const OathkeeperSdk = () => (
   <img
+    loading="lazy"
     alt="ORY Oathkeeper SDKs"
     className="responsive"
     src={oathkeeperPolyglot}

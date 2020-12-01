@@ -74,10 +74,10 @@ on this topic.
 <table width="100%">
     <tr>
         <td width="50%">
-            <img alt="Legitimate Application without Browser Authorization" src="../../images/articles/mobile-oauth2/login-app.png"/>
+            <img loading="lazy" alt="Legitimate Application without Browser Authorization" src="../../images/articles/mobile-oauth2/login-app.png"/>
         </td>
         <td width="50%">
-            <img alt="Legitimate Application without Browser Authorization" src="../../images/articles/mobile-oauth2/login-app.png"/>
+            <img loading="lazy" alt="Legitimate Application without Browser Authorization" src="../../images/articles/mobile-oauth2/login-app.png"/>
         </td>
     </tr>
     <tr align="center">
@@ -97,10 +97,10 @@ site and which one isn’t.
 <table width="100%">
     <tr>
         <td width="50%">
-            <img alt="Legitimate Application with Browser Authorization" src="../../images/articles/mobile-oauth2/login-app-legitimate.png"/>
+            <img loading="lazy" alt="Legitimate Application with Browser Authorization" src="../../images/articles/mobile-oauth2/login-app-legitimate.png"/>
         </td>
         <td width="50%">
-            <img alt="Illegitimate Application with Browser Authorization" src="../../images/articles/mobile-oauth2/login-app-counterfeit.png"/>
+            <img loading="lazy" alt="Illegitimate Application with Browser Authorization" src="../../images/articles/mobile-oauth2/login-app-counterfeit.png"/>
         </td>
     </tr>
     <tr align="center">

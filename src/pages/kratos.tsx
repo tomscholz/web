@@ -14,6 +14,7 @@ import Adopters from '../components/adopters'
 
 const KratosAnimation = () => (
   <img
+    loading="lazy"
     alt="The ORY Kratos user login and registration service"
     className="responsive"
     src={kratosProcess}
@@ -21,7 +22,12 @@ const KratosAnimation = () => (
 )
 
 const KratosSdk = () => (
-  <img alt="ORY Kratos SDKs" className="responsive" src={kratosPolyglot} />
+  <img
+    loading="lazy"
+    alt="ORY Kratos SDKs"
+    className="responsive"
+    src={kratosPolyglot}
+  />
 )
 
 const IntegrationCodeBox = () => (

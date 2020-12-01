@@ -34,7 +34,7 @@ const ThinProject = ({
         </div>
         <div className="col-lg-offset-2 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
           <Link to={href}>
-            <img src={visual} alt={`${title} visualized`} />
+            <img loading="lazy" src={visual} alt={`${title} visualized`} />
           </Link>
         </div>
       </div>

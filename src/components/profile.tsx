@@ -52,14 +52,19 @@ const socialWithIcon = ({ href, network }: SocialLinks) => {
 const Profile = ({ name, img, social }: PropTypes) => (
   <div className={styles.profile}>
     <div>
-      <Img fixed={img} alt={name} />
+      <img loading="lazy" fixed={img} alt={name} />
     </div>
     <div className={cn(styles.space)}>
       <h4>{name}</h4>
       <>
         {social.map(socialWithIcon).map(({ icon, href, alt }) => (
           <a href={href} key={href}>
-            <img className={cn(styles.social)} src={icon} alt={alt} />
+            <img
+              loading="lazy"
+              className={cn(styles.social)}
+              src={icon}
+              alt={alt}
+            />
           </a>
         ))}
       </>

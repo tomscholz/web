@@ -93,7 +93,7 @@ const Adopters = ({ onlyFeatured }: PropTypes) => (
                 .filter(({ featured }) => (onlyFeatured ? featured : true))
                 .map(({ title, image, url }) => (
                   <a href={url} key={title}>
-                    <img src={image} alt={title} />
+                    <img loading="lazy" src={image} alt={title} />
                   </a>
                 ))}
             </div>

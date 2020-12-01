@@ -4,6 +4,7 @@ import styles from './collaborator.module.css'
 
 const Contributors = () => (
   <img
+    loading="lazy"
     alt="OpenCollective"
     className="responsive"
     src="https://opencollective.com/ory/contributors.svg?avatarHeight=24&width=540&button=false"

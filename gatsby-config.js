@@ -12,10 +12,14 @@ const getTimeValueInSeconds = (timeValue) => {
   return String((Number(hours) * 60 + Number(minutes)) * 60 + Number(seconds))
 }
 
+const getYoutubeID = (urlString) => {
+  const url = new URL(urlString)
+  return url.host === 'youtu.be' ? url.pathname.slice(1) : url.searchParams.get('v')
+}
+
 const getYouTubeIFrameSrc = (urlString) => {
   const url = new URL(urlString)
-  const id =
-    url.host === 'youtu.be' ? url.pathname.slice(1) : url.searchParams.get('v')
+  const id = getYoutubeID(urlString)
 
   const embedUrl = new URL(
     `https://www.youtube-nocookie.com/embed/${id}?rel=0`
@@ -95,7 +99,8 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 860,
-              tracedSVG: true
+              tracedSVG: false,
+              loading: 'lazy'
             }
           },
           {
@@ -115,7 +120,9 @@ module.exports = {
                   },
                   getHTML: (url, { width = '100%', height = '315' }) => {
                     const iframeSrc = getYouTubeIFrameSrc(url)
-                    return `<div class="youtube">asdf<iframe width="${width}" height="${height}" src="${iframeSrc}" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>`
+                    const id = getYoutubeID(url)
+
+                    return `<div class="youtube"><iframe loading="lazy" width="${width}" height="${height}" src="${iframeSrc}" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen srcdoc="<style>*{padding: 0; margin: 0; overflow: hidden}html, body{height: 100%}img, span{position: absolute; width: 100%; top: 0; bottom: 0; margin: auto}span{height: 1.5em; text-align: center; font: 48px/1.5 sans-serif; color: white; text-shadow: 0 0 0.5em black}</style><a href='${iframeSrc}&autoplay=1'><img src='https://img.youtube.com/vi/${id}/hqdefault.jpg'/><span>▶</span></a>"></iframe></div>`
                   },
                   name: 'YouTube'
                 }
@@ -198,7 +205,6 @@ module.exports = {
     // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -236,7 +242,7 @@ module.exports = {
         }
       }
     },
-    `gatsby-plugin-force-trailing-slashes`,
+    `gatsby-plugin-force-trailing-slashes`
     // {
     //   resolve: `gatsby-plugin-gdpr-cookies`,
     //   options: {
