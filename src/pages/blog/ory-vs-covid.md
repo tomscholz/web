@@ -10,7 +10,7 @@ teaser: |
 
 seo:
   title: |
-    Open source software critical for global virus response
+    Write tests like Google and Apple Exposure Notifications using Dockertest
   keywords: |
     docker, test, database testing, cloud development, auth, authentication, open source, Covid19, pandemic
 
