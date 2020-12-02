@@ -1,5 +1,5 @@
 ---
-path: '/ory-vs-covid/'
+path: '/dockertest-gaen-google-apple-exposure-notification-covid-19/'
 
 title: |
   How Ory is helping keep Covid in check
