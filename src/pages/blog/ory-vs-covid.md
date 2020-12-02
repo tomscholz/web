@@ -2,7 +2,7 @@
 path: '/dockertest-gaen-google-apple-exposure-notification-covid-19/'
 
 title: |
-  How Ory is helping keep Covid in check
+  Keeping Covid-19 in check with ORY Dockertest
 
 teaser: |
   This article gives a short introduction to Dockertest and how Google is using it against Covid19,
