@@ -36,11 +36,11 @@ Using an API abstraction simplifies the process. But for small changes to the ta
 You have the problem that the mock is not a real database. You also have to rewrite the mock database and unit tests, when you make changes to your configuration.   
 This is where Docker and ORY Dockertest can help you create real databases for your tests. You dont have to set up a whole database infrastructure.  
 
-[Dockertest](https://github.com/ORY/Dockertest) automates your interactions with the Docker API. This lets you test your services database integration in a simple and straightforward way. 
+[Dockertest](https://github.com/ory/Dockertest) automates your interactions with the Docker API. This lets you test your services database integration in a simple and straightforward way. 
 You configure your specific test setup, create the databases you want to test, ping to ensure connection and after testing close and dispose of the database again.  
 
-In [Dockertest](https://github.com/ORY/Dockertest) a pool represents a connection to the Docker API and is used to handle docker images and resources represent the docker containers.
-You can find examples for all common databases on [github.com/ORY/Dockertest](https://github.com/ORY/Dockertest). 
+In [Dockertest](https://github.com/ory/Dockertest) a pool represents a connection to the Docker API and is used to handle docker images and resources represent the docker containers.
+You can find examples for all common databases on [github.com/ory/Dockertest](https://github.com/ory/Dockertest). 
 
 ## How Dockertest is helping keeping Covid in check
 
@@ -48,10 +48,10 @@ The (Google/Apple) Exposure Notification (GAEN) system was developed by both com
 Goverments worldwide use it to provide their citizens with a means of tracing infections or rather notifiying them of exposure to the virus. 
 Since most people either have an Apple or Android device this approach covers a broad chunk of the population. 
 
-Now what does this have to do with [Dockertest](https://github.com/ORY/Dockertest)?
+Now what does this have to do with [Dockertest](https://github.com/ory/Dockertest)?
 
-Google's [open source reference implementation](https://github.com/google/exposure-notifications-server) of an notification server uses [Dockertest](https://github.com/ORY/Dockertest) for [database testing](https://github.com/google/exposure-notifications-server/blob/c35c97708dec0a8a3e2ac54f89f9033be5da22a6/internal/database/database_util.go). 
-It is amazing to see a tool that was written to ease the development process at ORY is used by big tech organisations in the most impactful health operation in modern times. It shows what a reliable and essential tool [Dockertest](https://github.com/ORY/Dockertest) has become over the years.
+Google's [open source reference implementation](https://github.com/google/exposure-notifications-server) of an notification server uses [Dockertest](https://github.com/ory/Dockertest) for [database testing](https://github.com/google/exposure-notifications-server/blob/c35c97708dec0a8a3e2ac54f89f9033be5da22a6/internal/database/database_util.go). 
+It is amazing to see a tool that was written to ease the development process at ORY is used by big tech organisations in the most impactful health operation in modern times. It shows what a reliable and essential tool [Dockertest](https://github.com/ory/Dockertest) has become over the years.
 
 Here you can see the full code of the implementation: 
 ```go
@@ -178,7 +178,7 @@ You can read more in depth about the server on [Googles github documentation](ht
 
 ## Open-source software drives innovative development
 
-The whole GAEN project is open-source, as is [Dockertest](https://github.com/ORY/Dockertest). The whole concept of contact tracing or exposure notification works great with open source, since it cuts down complexity of the whole operation. 
+The whole GAEN project is open-source, as is [Dockertest](https://github.com/ory/Dockertest). The whole concept of contact tracing or exposure notification works great with open source, since it cuts down complexity of the whole operation. 
 Imagine how much slower and inconsistent it would be if every country tried to build this software themselves. 
 The sheer scale and complexity of the project as well as the countless pitfalls of security and privacy - that continue to cause controversy - is something that only a collective effort can handle.
 
@@ -200,15 +200,15 @@ This wont solve all - if any - problems of modern society, but it would be a gre
 ### Dockertest is an integral part of the ORY Ecosystem
 
 ORY promises to produce high quality open source software.   
-[Dockertest](https://github.com/ORY/Dockertest) is just one example of how ORY approaches advanced software development for cloud native applications.  
+[Dockertest](https://github.com/ory/Dockertest) is just one example of how ORY approaches advanced software development for cloud native applications.  
 As this blogpost documents, ORY works with a dedicated worldwide community assuring that developer friendly security tools, innovative product development in identity infrastructure, and advanced cloud deployment using cloud platform independent open source tools are broadly available.
 
 ### Conclusion 
 
-Thanks for taking the time to read this article! Check out (our blog)[https://www.ORY.sh/blog] for more articles and tutorials.
+Thanks for taking the time to read this article! Check out (our blog)[https://www.ory.sh/blog] for more articles and tutorials.
 
-Should you have further questions or feedback, visit the [ORY community forum](https://community.ORY.sh/) or [chat](https://www.ORY.sh/chat).
-[ORY Dockertest](https://github.com/ORY/Dockertest) is open-source and freely available on [github](https://github.com/ORY/kratos), please consider starring the repository.  
+Should you have further questions or feedback, visit the [ORY community forum](https://community.ORY.sh/) or [chat](https://www.ory.sh/chat).
+[ORY Dockertest](https://github.com/ory/Dockertest) is open-source and freely available on [github](https://github.com/ory/kratos), please consider starring the repository.  
 It is free and helps grow the project and community.  
 
-Sign up to [the ORY newsletter](https://ORY.us10.list-manage.com/subscribe?u=ffb1a878e4ec6c0ed312a3480&id=f605a41b53) and we will notify you of new updates to [ORY Dockertest](https://github.com/ORY/Dockertest) and [other ORY projects](https://github.com/ORY/).
+Sign up to [the ORY newsletter](https://ORY.us10.list-manage.com/subscribe?u=ffb1a878e4ec6c0ed312a3480&id=f605a41b53) and we will notify you of new updates to [ORY Dockertest](https://github.com/ory/Dockertest) and [other ORY projects](https://github.com/ory/).
