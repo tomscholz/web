@@ -207,7 +207,7 @@ As this blogpost documents, ORY works with a dedicated worldwide community assur
 
 Thanks for taking the time to read this article! Check out (our blog)[https://www.ORY.sh/blog] for more articles and tutorials.
 
-Should you have further questions or feedback, visit the [ORY community forum](https://community.ORY.sh/) or [chat](https://www.ORY.sh/chat).
+Should you have further questions or feedback, visit the [ORY Community Forum](https://community.ory.sh/) or [ORY Slack](https://www.ory.sh/chat).
 [ORY Dockertest](https://github.com/ORY/Dockertest) is open-source and freely available on [github](https://github.com/ORY/kratos), please consider starring the repository.  
 It is free and helps grow the project and community.  
 
