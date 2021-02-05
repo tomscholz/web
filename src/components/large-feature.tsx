@@ -32,7 +32,7 @@ const LargeFeature = ({ content }: PropTypes) => (
                 <h3>{title}</h3>
               </Link>
               <p>{description}</p>
-              <Link to={href} className={cn(styles.cap, 'secondary')}>
+              <Link to={href} className={cn(styles.cap, 'cta','secondary')}>
                 {learn}
               </Link>
             </div>
