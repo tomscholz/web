@@ -24,16 +24,16 @@ const Features = ({ headline, features }: PropTypes) => (
     <div className="container-fluid">
       <div className="row">
         <div className="col-lg-offset-1 col-lg-10  col-md-offset-1 col-md-10  col-sm-offset-1 col-sm-10">
-          {headline.map(({ title, overline }) => (
-            <div>
+          {headline.map(({ title, overline }, key) => (
+            <div key={key}>
               <p className={cn(styles.overline)}>{overline}</p>
               <h2>{title}</h2>
             </div>
           ))}
           <div>
             <div className={cn(styles.featuresFlex)}>
-              {features.map(({ title, content }) => (
-                <div className={cn(styles.featuresBox)}>
+              {features.map(({ title, content }, key) => (
+                <div key={key} className={cn(styles.featuresBox)}>
                   {/*<img
                       loading="lazy"
                       className={cn(styles.icon)}
