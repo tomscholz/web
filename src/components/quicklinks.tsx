@@ -10,15 +10,12 @@ import Jobs from '../images/icon/jobs.svg'
 interface PropTypes {
   content: Content[]
   quick: Quick[]
+  cta: CallToAction[]
 }
-
 
 interface Content {
   title: string
   description: string
-  learn: string
-  href: string
-  openInNewWindow?: boolean
 }
 
 interface Quick {
@@ -29,23 +26,40 @@ interface Quick {
   openInNewWindow?: boolean
 }
 
+interface CallToAction {
+  title: string
+  href: string
+  style?: 'primary' | 'secondary'
+  openInNewWindow?: boolean
+}
 
-const Quicklinks = ({ content, quick}: PropTypes) => (
+const CallToActionButton = ({
+                              title,
+                              href,
+                              style = 'secondary',
+                              openInNewWindow = false,
+                            }: CallToAction) => (
+  <a
+    key={title}
+    href={href}
+    className={cn(style, 'cta')}
+    rel={openInNewWindow ? 'noopener noreferrer' : ''}
+    target={openInNewWindow ? '_blank' : ''}
+  >
+    {title}
+  </a>
+)
+
+const Quicklinks = ({ content, quick, cta}: PropTypes) => (
   <div className={cn(styles.quicklinks)}>
         <div className="container-fluid">
           <div className="row middle-lg">
             {content.map(
-              ({ title, description, learn, href, openInNewWindow}, key) => (
+              ({ title, description}, key) => (
             <div key={key}  className={cn(styles.quicklinksContent, "col-lg-offset-1 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10")}>
               <h3>{title}</h3>
               <p>{description}</p>
-              <Link
-                to={href}
-                rel={openInNewWindow ? 'noopener noreferrer' : ''}
-                target={openInNewWindow ? '_blank' : ''}
-                className={cn(styles.cap, 'secondary')}>
-                {learn}
-              </Link>
+              <>{cta.map(CallToActionButton)}</>
             </div>
               ))}
             <div className="col-lg-offset-2 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
