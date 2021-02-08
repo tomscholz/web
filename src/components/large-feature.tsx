@@ -3,6 +3,12 @@ import cn from 'classnames'
 import * as styles from './large-feature.module.css'
 import { Link } from 'gatsby'
 
+import OpenSource from '../images/icon/docs.svg'
+import Standards from '../images/icon/blog.svg'
+import Developer from '../images/icon/jobs.svg'
+import Integration from '../images/icon/jobs.svg'
+
+
 interface PropTypes {
   content: Content[]
 }
@@ -12,7 +18,7 @@ interface Content {
   description: string
   learn: string
   href: string
-  visual: string
+  visual: 'opensource' | 'standards' | 'developer' | 'integrations'
   openInNewWindow?: boolean
 }
 
@@ -32,7 +38,7 @@ const LargeFeature = ({ content }: PropTypes) => (
                 <h3>{title}</h3>
               </Link>
               <p>{description}</p>
-              <Link to={href} className={cn(styles.cap, 'cta','secondary')}>
+              <Link to={href} className={cn(styles.cap, 'cta', 'primary')}>
                 {learn}
               </Link>
             </div>
@@ -42,7 +48,9 @@ const LargeFeature = ({ content }: PropTypes) => (
                 rel={openInNewWindow ? 'noopener noreferrer' : ''}
                 target={openInNewWindow ? '_blank' : ''}
               >
-                <img loading="lazy" src={visual} alt={`${title}`} />
+                <img loading="lazy"
+                     src={visual === 'opensource' ? OpenSource : (visual === 'standards' ? Standards : (visual === 'developer' ? Developer : (visual === 'integrations' ? Integration :'')))}
+                     alt={`${title}`} />
               </Link>
             </div>
           </div>
