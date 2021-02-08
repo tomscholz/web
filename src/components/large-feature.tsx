@@ -10,53 +10,49 @@ import Integration from '../images/icon/jobs.svg'
 
 
 interface PropTypes {
-  content: Content[]
-}
-
-interface Content {
   title: string
   description: string
   learn: string
   href: string
   visual: 'opensource' | 'standards' | 'developer' | 'integrations'
   openInNewWindow?: boolean
+  alternate?: boolean
 }
 
-const LargeFeature = ({ content }: PropTypes) => (
+const LargeFeature = ({ title, description, learn, href, openInNewWindow, visual, alternate }: PropTypes) => (
   <div className={cn(styles.thin)}>
-    {content.map(
-      ({ title, description, learn, href, openInNewWindow, visual }, key) => (
-        <div key={key} className="container-fluid">
-          <div className={cn('row middle-lg')}>
-            <div className="col-lg-offset-1 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
-              <Link
-                to={href}
-                rel={openInNewWindow ? 'noopener noreferrer' : ''}
-                target={openInNewWindow ? '_blank' : ''}
-                className={cn(styles.cap, 'secondary')}
-              >
-                <h3>{title}</h3>
-              </Link>
-              <p>{description}</p>
-              <Link to={href} className={cn(styles.cap, 'cta', 'primary')}>
-                {learn}
-              </Link>
-            </div>
-            <div className="col-lg-offset-2 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
-              <Link
-                to={href}
-                rel={openInNewWindow ? 'noopener noreferrer' : ''}
-                target={openInNewWindow ? '_blank' : ''}
-              >
-                <img loading="lazy"
-                     src={visual === 'opensource' ? OpenSource : (visual === 'standards' ? Standards : (visual === 'developer' ? Developer : (visual === 'integrations' ? Integration :'')))}
-                     alt={`${title}`} />
-              </Link>
-            </div>
-          </div>
+    <div className="container-fluid">
+      <div className={cn('row middle-lg', { [styles.alternate]: alternate })}>
+        <div
+          className={!alternate ? 'col-lg-offset-1 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10' : 'col-lg-offset-2 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 hidden-md hidden-sm'}
+        >
+          <Link
+            to={href}
+            rel={openInNewWindow ? 'noopener noreferrer' : ''}
+            target={openInNewWindow ? '_blank' : ''}
+            className={cn(styles.cap, 'secondary')}
+          >
+            <h3>{title}</h3>
+          </Link>
+          <p>{description}</p>
+          <Link to={href} className={cn(styles.cap, 'cta', 'primary')}>
+            {learn}
+          </Link>
         </div>
-      )
-    )}
+        <div
+          className={!alternate ? 'col-lg-offset-2 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 hidden-md hidden-sm' : 'col-lg-offset-1 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10'}>
+          <Link
+            to={href}
+            rel={openInNewWindow ? 'noopener noreferrer' : ''}
+            target={openInNewWindow ? '_blank' : ''}
+          >
+            <img loading="lazy"
+                 src={visual === 'opensource' ? OpenSource : (visual === 'standards' ? Standards : (visual === 'developer' ? Developer : (visual === 'integrations' ? Integration : '')))}
+                 alt={`${title}`}/>
+          </Link>
+        </div>
+      </div>
+    </div>
   </div>
 )
 

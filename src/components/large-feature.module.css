@@ -1,16 +1,16 @@
 @import '../styles/properties.css';
+.alternate {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
 
 .thin {
   background-color: var(--colors-base-white);
   padding: 96px 0;
+  border-bottom: 1px solid;
+  border-color: var(--colors-themed-default);
 
-  &:first-child {
-    padding-top: 96px;
-  }
-
-  &:last-child {
-    padding-bottom: 64px;
-  }
 
   & h3 {
     color: var(--colors-base-black);
