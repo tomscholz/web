@@ -225,7 +225,7 @@ class Stats extends Component<PropTypes, StateTypes> {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-offset-1 col-lg-4  col-md-offset-1 col-md-10  col-sm-offset-1 col-sm-10">
-              <h3>Billions of Identities.</h3>
+              <h3>Billions of Identities</h3>
               <p>
                 Companies from all over the world rely on Ory for their identity needs. Ory technology secures billions of identity requests.
               </p>
