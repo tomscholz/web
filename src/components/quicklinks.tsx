@@ -8,14 +8,10 @@ import Blog from '../images/icon/blog.svg'
 import Jobs from '../images/icon/jobs.svg'
 
 interface PropTypes {
-  content: Content[]
-  quick: Quick[]
-  cta: CallToAction[]
-}
-
-interface Content {
   title: string
   description: string
+  quick: Quick[]
+  cta: CallToAction[]
 }
 
 interface Quick {
@@ -50,18 +46,15 @@ const CallToActionButton = ({
   </a>
 )
 
-const Quicklinks = ({ content, quick, cta}: PropTypes) => (
+const Quicklinks = ({ title, description, quick, cta}: PropTypes) => (
   <div className={cn(styles.quicklinks)}>
         <div className="container-fluid">
           <div className="row middle-lg">
-            {content.map(
-              ({ title, description}, key) => (
-            <div key={key}  className={cn(styles.quicklinksContent, "col-lg-offset-1 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10")}>
+            <div className={cn(styles.quicklinksContent, "col-lg-offset-1 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10")}>
               <h3>{title}</h3>
               <p>{description}</p>
               <>{cta.map(CallToActionButton)}</>
             </div>
-              ))}
             <div className="col-lg-offset-2 col-lg-4 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
               {quick.map(
                 ({ description, learn, href, openInNewWindow, icon }, key) => (
