@@ -63,6 +63,16 @@
 
 .quicklinks-inner {
 
+  & :global a:any-link {
+    color: var(--colors-themed-default);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--colors-base-black);
+    }
+  }
+
   & p {
     margin: 0 0 .5rem;
   }
