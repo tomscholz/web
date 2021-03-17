@@ -6,10 +6,9 @@ import Adopters from '../components/adopters'
 import Stats from '../components/stats'
 import CompressedHero from '../components/compressed-hero'
 import Highlights from '../components/highlights'
-import LargeFeature from '../components/large-feature'
 import Quicklinks from '../components/quicklinks'
 import heroIllustration from '../images/illustrations/hero.svg'
-import Link from '../components/link'
+import ThinProjectList from '../components/thin-project-list'
 
 const HeroIllustration = () => (
   <img
@@ -74,62 +73,7 @@ const IndexPage = () => (
 
     <Adopters onlyFeatured />
 
-    <LargeFeature
-      title={'Powered by Open Source'}
-      description={
-        'You can rely on open source software that is built together in a world-wide community of developers. Ory software is peer reviewed, vetted by expert developers, and tried, tested and used in companies of all sizes all over the world.'
-      }
-      learn={'Explore Ory open source'}
-      href={'https://github.com/ory'}
-      visual={'opensource'}
-      openInNewWindow={true}
-    />
-
-    <LargeFeature
-      alternate
-      title={'Rely on open standards'}
-      description={
-        <>
-          Give your customers secure choices for how they register and sign in
-          with you. Rely on{' '}
-          <Link to={'https://oauth.net/2/'} openInNewWindow={true}>
-            Oauth 2.0
-          </Link>{' '}
-          and{' '}
-          <Link to={'https://openid.net/connect/'} openInNewWindow={true}>
-            OpenID Connect
-          </Link>{' '}
-          and web standard best practices to secure you and your customers.
-        </>
-      }
-      learn={'Learn more'}
-      href={'/docs/ecosystem/software-architecture-philosophy'}
-      visual={'standards'}
-      openInNewWindow={true}
-    />
-
-    <LargeFeature
-      title={'Are you a developer?'}
-      description={
-        'Be a hero at your company. Ory has everything you need to add authentication, authorization, and user management to your apps. Create your own identity provider or run your own Oauth server.'
-      }
-      learn={'Start building with Ory'}
-      href={'/developer'}
-      visual={'developer'}
-      openInNewWindow={true}
-    />
-
-    <LargeFeature
-      alternate
-      title={'Easy integrations'}
-      description={
-        'Ory already works with what you’re doing. Lots of easy ways to make tools, software, platforms and coding languages your business uses work with Ory.'
-      }
-      learn={'Integrate with Ory'}
-      href={'https://github.com/ory/sdk'}
-      visual={'integration'}
-      openInNewWindow={true}
-    />
+    <ThinProjectList />
 
     <Stats />
 
