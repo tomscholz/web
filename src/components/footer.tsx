@@ -50,20 +50,20 @@ const menu: MenuItem[] = [
     href: '/',
     items: [
       {
-        title: 'OAuth 2.0',
-        href: '/hydra'
-      },
-      {
-        title: 'Authorization',
-        href: '/keto'
-      },
-      {
         title: 'User Management',
         href: '/kratos'
       },
       {
-        title: 'Zero Trust Networking',
+        title: 'OAuth 2.0',
+        href: '/hydra'
+      },
+      {
+        title: 'Identity and Access Proxy',
         href: '/oathkeeper'
+      },
+      {
+        title: 'Global Access Control',
+        href: '/keto'
       }
     ]
   },
