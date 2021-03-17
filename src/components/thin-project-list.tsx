@@ -1,5 +1,5 @@
 import React from 'react'
-import { brandPrefix, projects } from '../config'
+import { projects } from '../config'
 import ThinProject from './thin-project'
 
 const ThinProjectList = () => (
@@ -11,7 +11,7 @@ const ThinProjectList = () => (
         theme={id}
         title={descriptiveTitle}
         description={description}
-        learn={`Explore ${brandPrefix} ${id}`}
+        learn={`Explore ${id}`}
         visual={visual}
         openInNewWindow={false}
       />
