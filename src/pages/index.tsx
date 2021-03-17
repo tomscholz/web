@@ -27,18 +27,13 @@ const IndexPage = () => (
       title="Ory - Open Source OAuth2 and OpenID Connect Access Control & API Security"
     />
     <CompressedHero
-      title="The new identity platform."
-      subtitle="Give your customers rich experiences and easy secure ways to register and sign in across your mobile and web apps."
+      title="The new identity stack."
+      subtitle="The only Open Source and SaaS platform for identity, auth, and connecting customers, applications and data"
       cta={[
         {
           title: 'Learn more',
-          href: '/products',
-          style: 'primary'
-        },
-        {
-          title: 'For developers →',
           href: '/developer',
-          style: 'secondary'
+          style: 'primary'
         }
       ]}
       visual={<HeroIllustration />}
