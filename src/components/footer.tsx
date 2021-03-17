@@ -47,7 +47,7 @@ interface MenuItem {
 const menu: MenuItem[] = [
   {
     title: 'Products',
-    href: '/products',
+    href: '/',
     items: [
       {
         title: 'OAuth 2.0',
