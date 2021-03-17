@@ -39,3 +39,7 @@
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
+
+.capital  {
+  text-transform: capitalize;
+}

@@ -49,7 +49,7 @@ const ThinProject = ({
           <Link
             to={href}
             openInNewWindow={openInNewWindow}
-            className={cn('cta', 'primary')}
+            className={cn(styles.capital, 'cta', 'primary')}
           >
             {learn}
           </Link>
