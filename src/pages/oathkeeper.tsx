@@ -85,7 +85,7 @@ const OathkeeperPage = () => (
     discussionsLink="https://github.com/ory/oathkeeper/discussions"
   >
     <SEO
-      description=""
+      description="Authenticate and authorize all traffic, using Zero Trust / BeyondCorp."
       title={`${brandPrefix}Oathkeeper Open Source Identity and Access Proxy (IAP).`}
     />
 
