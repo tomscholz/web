@@ -90,8 +90,8 @@ const OathkeeperPage = () => (
     />
 
     <CompressedHero
-      title="Configure how traffic interacts with your application"
-      subtitle="Identity and Access Proxy (IAP). Authenticate and authorize all traffic, using Zero Trust / BeyondCorp as open source."
+      title="Identity and Access Proxy (IAP)"
+      subtitle="Configure how traffic interacts with your application. Authenticate and authorize all traffic, using Zero Trust / BeyondCorp."
       cta={[
         {
           title: 'Get started',
