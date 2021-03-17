@@ -73,22 +73,22 @@ const menu: MenuItem[] = [
     openInNewWindow: true,
     items: [
       {
-        title: `${brandPrefix}Kratos`,
+        title: 'Kratos',
         href: 'https://github.com/ory/kratos',
         openInNewWindow: true
       },
       {
-        title: `${brandPrefix}Hydra`,
+        title: 'Hydra',
         href: 'https://github.com/ory/hydra',
         openInNewWindow: true
       },
       {
-        title: `${brandPrefix}Oathkeeper`,
+        title: 'Oathkeeper',
         href: 'https://github.com/ory/oathkeeper',
         openInNewWindow: true
       },
       {
-        title: `${brandPrefix}Keto`,
+        title: 'Keto',
         href: 'https://github.com/ory/keto',
         openInNewWindow: true
       }
