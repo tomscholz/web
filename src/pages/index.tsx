@@ -41,32 +41,34 @@ const IndexPage = () => (
     <Highlights
       highlight={[
         {
-          visual: 'hydra',
-          title: 'OAuth 2.0 and OpenID Connect',
-          href: '/hydra',
+          visual: 'opensource',
+          title: 'Powered by Open Source',
+          href: 'https://github.com/ory',
+          openInNewWindow: true,
           content:
-            'Keep threats out and easily verify who is a customer, and customize sign in flows that fit you and your customers.'
+            'You can rely on open source software that is built together in a world-wide community of developers. Peer reviewed, vetted by expert developers - tried and tested.'
         },
         {
-          visual: 'keto',
-          title: 'Authorization',
-          href: '/keto',
+          visual: 'integration',
+          title: 'Easy integration',
+          href: 'https://github.com/ory/sdk',
+          openInNewWindow: true,
           content:
-            'Personalize experiences using customer specific access rules, define roles, and give customers individual access to your service.'
+            'Work with what you’re doing. Easy ways to make tools, software, platforms and coding languages used by your business already work with Ory.'
         },
         {
-          visual: 'kratos',
-          title: 'User management',
-          href: '/kratos',
+          visual: 'openstandards',
+          title: 'Rely on open standards',
+          href: '/docs/ecosystem/software-architecture-philosophy',
           content:
-            'Grow your customers, easily register and manage customer identities, using custom flows in your look and feel.'
+            'Give your customers secure choices for how they register and sign in with you. Rely on Oauth 2.0 and OpenID Connect and web standard best practices.'
         },
         {
-          visual: 'oathkeeper',
-          title: 'Zero trust networking',
-          href: '/oathkeeper',
+          visual: 'developer',
+          title: "You're a developer?",
+          href: '/developer',
           content:
-            'Be in full control - secure web-facing applications and services by implementing Zero-Trust Network Architecture.'
+            'Be a hero at your company. Ory has everything you need to add authentication, authorization, and user management to your apps.'
         }
       ]}
     />
