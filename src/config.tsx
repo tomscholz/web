@@ -48,9 +48,9 @@ export const projects: Project[] = [
   {
     id: 'oathkeeper',
     title: `${brandPrefix}Oathkeeper`,
-    descriptiveTitle: 'Identity and Access Proxy',
+    descriptiveTitle: 'Identity and Access Proxy (IAP)',
     description:
-      'Identity and Access Proxy (IAP). Authenticate and authorize all traffic, using Zero Trust / BeyondCorp as open source.',
+      'Configure how traffic interacts with your application. Authenticate and authorize all traffic, using Zero Trust / BeyondCorp as open source.',
     path: '/oathkeeper',
     links: {
       quickstart: 'https://www.ory.sh/oathkeeper/docs/index'
