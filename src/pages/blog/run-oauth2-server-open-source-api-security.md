@@ -363,7 +363,6 @@ This command produces an overview of the CLI as follows:
 
 ```shell-session
 Run and manage ORY Hydra
-```
 
 Usage: hydra [command]
 
@@ -379,7 +378,7 @@ unknown certificate authorities
 
 Use "hydra [command] --help" for more information about a command.
 
-````
+```
 
 ## Performing the OAuth2 Client Credentials Flow
 
@@ -395,7 +394,7 @@ $ docker run --rm -it \
     --secret some-secret \
     --grant-types client_credentials \
     --response-types token,code
-````
+```
 
 Now the infrastructure is all set up, and it's time to perform the OAuth2 Client
 Credentials Flow. In this case the CLI will be used to create an OAuth2 Client
@@ -507,7 +506,7 @@ Connect flow, an OAuth2 Client (consumer app) is required.
 The client must be able to request the `authorize_code` grant, scope `openid`
 and `offline`, and response types `token`, `code`, and `id_token`.
 
-```shell-session
+`shell-session
 $ docker run --rm -it \
   --network hydraguide \
   oryd/hydra:v1.8.5 \
